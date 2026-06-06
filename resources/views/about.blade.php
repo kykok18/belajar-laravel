@@ -1,13 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'Contact')
+@section('title', 'About')
 
 @section('content')
-<h1>Contact Us</h1>
-<p>Hubungi kami jika Anda memiliki pertanyaan atau masukan.</p>
-<form>
-    <input type="text" name="nama" placeholder="Nama Anda">
-    <textarea name="pesan" placeholder="Pesan Anda"></textarea>
-    <button type="submit">Kirim</button>
-</form>
+<h1>About Us</h1>
+<p>Ini adalah halaman tentang kami, tempat Anda dapat mempelajari lebih banyak tentang perusahaan dan misi kami.</p>
+<h3>Biodata Saya:</h3>
+<ul>
+    <li>Nama: Rizky Fadilah</li>
+    <li>Hobi: Coding & Gaming</li>
+    <li>Skill: Laravel Beginner 🔥</li>
+</ul>
 @endsection

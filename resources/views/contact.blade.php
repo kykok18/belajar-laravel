@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Contact Us')</title>
-</head>
+@section('title', 'Contact')
 
-<body>
-    @include('partials.navbar')
-    <div class="container">
-        <h1>Contact Us</h1>
-        <p>hubungi kami jika Anda memiliki pertanyaan atau masukan.</p>
-        @yield('content')
-    </div>
-
-</body>
-
-</html>
+@section('content')
+<h1>Contact Us</h1>
+<p>Hubungi kami jika Anda memiliki pertanyaan atau masukan.</p>
+<form>
+    <input type="text" name="nama" placeholder="Nama Anda">
+    <textarea name="pesan" placeholder="Pesan Anda"></textarea>
+    <button type="submit">Kirim</button>
+</form>
+@endsection
